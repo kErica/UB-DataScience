@@ -11,7 +11,7 @@ UB IL-3 course
 ### Access CSUC and transfer files
 
 #### How to login
-Your username is `curs$NUM` and your initial password is c1rs$NUM
+Your username is `curs$NUM` and your initial password will be provided online. 
 
 NUM=[1..23].
 
