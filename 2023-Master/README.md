@@ -1,6 +1,7 @@
-# 2023UB-formation
+# 2024UB-formation
 ```
 Contact: erica.bianco@hpcnow.com
+Contact: danilo.gonzalez@hpcnow.com
 ```
 The content of this folder was tested on Feb 2023 on the purpose to fulfill the HPC best practices Hands-on for the
 Ciencia de los Datos (Data Science), Aplicaciones en Biología y Medicina con Python y R
