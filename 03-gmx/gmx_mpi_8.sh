@@ -7,7 +7,7 @@
 #SBATCH -n 4 
 #SBATCH -t 30
 #SBATCH --mem-per-cpu=2G
-#SBATCH --reservation=curs  
+#SBATCH --reservation=ub-il3  
   
 module load apps/gromacs/2018.3
 

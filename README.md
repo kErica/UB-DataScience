@@ -47,7 +47,7 @@ scp -rp -P 2122 UB-DataScience-master $CSUC_USER@pirineus3.csuc.cat:/home/curs<i
 
 ## or
 cd UB-DataScience
-sftp –oPort=2122 $CSUC_USER@hpc.csuc.cat
+sftp –oPort=2122 $CSUC_USER@pirineus3.csuc.cat
 mput -R *
 ```
 
@@ -81,7 +81,7 @@ srun	## Run a parallel job
 ## How to initiate an interactive session
 > **_NOTE:_**  This is not going to work as your user cannot allocate resources.
 ```
-salloc --time 4:00:00 srun --pty bash
+salloc -t 0-01:00 -n 4
 ```
 
 
