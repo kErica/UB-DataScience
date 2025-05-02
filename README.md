@@ -18,7 +18,7 @@ UB IL-3 course
 #### How to login
 Your username is `curs$NUM` and your initial password will be provided online. 
 
-[How to connect to Pirineus III](Check the docu: https://confluence.csuc.cat/display/HPCKB/How+to+connect+to+Pirineus+III)
+Check the docu: [How to connect to Pirineus III](https://confluence.csuc.cat/display/HPCKB/How+to+connect+to+Pirineus+III)
 
 NUM=[1..23].
 
