@@ -10,7 +10,7 @@
 #SBATCH -t 30
 #SBATCH --reservation=ub-il3
 
-module load gromacs/2018.3
+ml gromacs/2024.2
 
 OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
 
