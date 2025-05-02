@@ -1,4 +1,4 @@
-# 2024UB-formation
+# 2025UB-Data Science HPC
 ```
 Contact: erica.bianco@hpcnow.com
 Contact: danilo.gonzalez@hpcnow.com
@@ -11,8 +11,14 @@ UB IL-3 course
 
 ### Access CSUC and transfer files
 
+### Check the docu
+
+[CSUC HPC Portal](https://confluence.csuc.cat/display/HPCKB/CSUC+HPC+Portal)
+
 #### How to login
 Your username is `curs$NUM` and your initial password will be provided online. 
+
+[How to connect to Pirineus III](Check the docu: https://confluence.csuc.cat/display/HPCKB/How+to+connect+to+Pirineus+III)
 
 NUM=[1..23].
 
@@ -25,7 +31,7 @@ At the first access you have set a new password with the following rules:
 
 ```
 CSUC_USER=curs<INSERT YOUR NUM HERE>
-ssh $CSUC_USER@hpc.csuc.cat -p 2122
+ssh $CSUC_USER@ -p 2122
 ```
 
 #### How to move data
