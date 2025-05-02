@@ -31,25 +31,29 @@ At the first access you have set a new password with the following rules:
 
 ```
 CSUC_USER=curs<INSERT YOUR NUM HERE>
-ssh $CSUC_USER@ -p 2122
+ssh -p2122 $CURS_USER@pirineus3.csuc.cat
 ```
+
+1. Insert the temporary password.
+2. Insert the new password - remember it!!!
+3. Insert again the new password.
+
 
 #### How to move data
 ```
-git clone https://github.com/kErica/2023UB-formation.git
+git clone https://github.com/kErica/UB-DataScience.git
 
-scp -rp -P 2122 2023UB-formation $CSUC_USER@hpc.csuc.cat:/home/$CSUC_USER
-scp -rp -P 2122 UB-DataScience-master cursNUMBER@hpc.csuc.cat:/home/cursNUMBER
+scp -rp -P 2122 UB-DataScience-master $CSUC_USER@pirineus3.csuc.cat:/home/curs<insert number here>
 
 ## or
-cd 2023UB-formation
-sftp –oPort=2122 $CSUC_USER>@hpc.csuc.cat
+cd UB-DataScience
+sftp –oPort=2122 $CSUC_USER@hpc.csuc.cat
 mput -R *
 ```
 
 Then ssh to the system
 ```
-ssh $CSUC_USER@hpc.csuc.cat -p 2122
+ssh -p2122 $CURS_USER@pirineus3.csuc.cat
 ```
 
 ### Explore the environment
@@ -85,22 +89,22 @@ salloc --time 4:00:00 srun --pty bash
 
 ### Launch a serial job
 ```
-cd 2023UB-formation-master/01-Serial
-sbatch serial.slm
+cd UB-DataScience-master/01-Serial
+sbatch serial.sh
 ## check your jobs and outputs
 ls -lthr
 ```
 
 ### Launch an array of jobs
 ```
-sbatch --array=0-9 serial-array.slm
+sbatch --array=0-9 serial-array.sh
 ```
 
 ### Launch an OpenMP job
 ```
 cd ../02-OpenMP
 ls
-sbatch openmp.slm
+sbatch openmp.sh
 cat hello.log
 ```
 
@@ -109,13 +113,13 @@ cat hello.log
 cd ../03-gmx/
 
 ## OpenMP job
-sbatch gmx_omp_8.slm
+sbatch gmx_omp_8.sh
 
 ## hybrid job
-sbatch gmx_hyb_8.slm
+sbatch gmx_hyb_8.sh
 
 ## MPI job
-sbatch gmx_mpi_8.slm
+sbatch gmx_mpi_8.sh
 ```
 
 
