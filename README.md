@@ -108,19 +108,6 @@ sbatch openmp.sh
 cat hello.log
 ```
 
-### OpenMP, Hybrid and MPI jobs
-```
-cd ../03-gmx/
-
-## OpenMP job
-sbatch gmx_omp_8.sh
-
-## hybrid job
-sbatch gmx_hyb_8.sh
-
-## MPI job
-sbatch gmx_mpi_8.sh
-```
 
 
 
